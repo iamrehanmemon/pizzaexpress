@@ -23,7 +23,7 @@ export const HeroItems = styled.div`
   align-items: flex-start;
   height: 100vh;
   max-height: 100%;
-  padding: 0rem;
+  padding: 0 2rem;
   color: #fff;
   text-transform: uppercase;
   line-height: 1;
@@ -41,9 +41,22 @@ export const HeroH1 = styled.h1`
   letter-spacing: 3px;
 `;
 
-export const HeroBtn = styled.button``;
-
 export const HeroP = styled.p`
   font-size: clamp(2rem, 2.5vw, 3rem);
   margin-bottom: 2rem;
+`;
+
+export const HeroBtn = styled.button`
+  font-size: 1.4rem;
+  padding: 1rem 4rem;
+  border: none;
+  background: #e31837;
+  color: #fff;
+  transition: 0.2s ease-out;
+
+  &:hover {
+    background: #ffc500;
+    transition: 0.2s ease-out;
+    cursor: pointer;
+  }
 `;
