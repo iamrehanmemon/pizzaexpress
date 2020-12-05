@@ -18,7 +18,7 @@ export const NavLink = styled(Link)`
   text-decoration: none;
   cursor: pointer;
 
-  @media screen and (max-width: 400px) {
+  @media screen and (max-width: 300px) {
     position: absolute;
     top: 10px;
     left: 25px;
@@ -34,9 +34,9 @@ export const NavIcon = styled.div`
   color: #fff;
 
   p {
-    transform: translate(-175%, 100%);
+    transform: translate(-175%, 130%);
     font-weight: bold;
-    @media screen and (max-width: 350px) {
+    @media screen and (max-width: 450px) {
       display: none;
     }
   }
@@ -44,8 +44,8 @@ export const NavIcon = styled.div`
 
 export const Bars = styled(FaPizzaSlice)`
   font-size: 2rem;
-  transform: translate(-50%, -15%);
-  @media screen and (max-width: 350px) {
-    transform: translate(-80%, 50%);
+  transform: translate(-50%, 10%);
+  @media screen and (max-width: 450px) {
+    transform: translate(-80%, 80%);
   }
 `;
