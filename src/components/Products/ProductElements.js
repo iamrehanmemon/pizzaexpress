@@ -11,13 +11,14 @@ export const ProductWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  margin: 0 auto;
+  /* margin: 2.5rem auto; */
 `;
 
 export const ProductsHeading = styled.h1`
   font-size: clamp(2rem, 2.5vw, 3rem);
   text-align: center;
-  margin-bottom: 5rem;
+  margin-bottom: 2.5rem;
+  padding-top: 2.5rem;
 `;
 
 export const ProductCard = styled.div`
