@@ -36,10 +36,16 @@ export const NavIcon = styled.div`
   p {
     transform: translate(-175%, 100%);
     font-weight: bold;
+    @media screen and (max-width: 350px) {
+      display: none;
+    }
   }
 `;
 
 export const Bars = styled(FaPizzaSlice)`
   font-size: 2rem;
   transform: translate(-50%, -15%);
+  @media screen and (max-width: 350px) {
+    transform: translate(-80%, 50%);
+  }
 `;
