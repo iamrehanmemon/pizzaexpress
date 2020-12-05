@@ -24,6 +24,7 @@ export const HeroItems = styled.div`
   height: 100vh;
   max-height: 100%;
   padding: 0 2rem;
+
   color: #fff;
   text-transform: uppercase;
   line-height: 1;
@@ -47,16 +48,18 @@ export const HeroP = styled.p`
 `;
 
 export const HeroBtn = styled.button`
-  font-size: 1.4rem;
+  font-size: 1rem;
   padding: 1rem 4rem;
   border: none;
-  background: #e31837;
-  color: #fff;
+  background: #ffc500;
+  color: #000;
+
   transition: 0.2s ease-out;
 
   &:hover {
-    background: #ffc500;
+    background: #e31837;
     transition: 0.2s ease-out;
     cursor: pointer;
+    color: #fff;
   }
 `;
