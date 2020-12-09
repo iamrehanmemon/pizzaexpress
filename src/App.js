@@ -1,20 +1,22 @@
-import { BrowserRouter as Router } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+// import {} from "react-router-dom";
 import { GlobalStyle } from "./globalStyle";
-
-import Hero from "./components/Hero";
-import Products from "./components/Products";
-import Feature from "./components/Feature";
-import { productData, productDataTwo } from "./components/Products/data";
+import Homepage from "./pages/Homepage/homepage";
+import FullMenu from "./pages/FullMenu/fullmenupage";
+import PizzaPage from "./pages/PizzaPage/pizzapage";
+import DesertMenuPage from "./pages/DesertMenuPage/desertpage";
 import Footer from "./components/Footer";
 
 function App() {
   return (
     <Router>
       <GlobalStyle />
-      <Hero />
-      <Products heading="Choose your Favourite" data={productData} />
-      <Feature />
-      <Products heading="Sweet Treats For You" data={productDataTwo} />
+      <Switch>
+        <Route exact path="/" component={Homepage} />
+        <Route exact path="/fullmenu" component={FullMenu} />
+        <Route exact path="/pizza" component={PizzaPage} />
+        <Route exact path="/deserts" component={DesertMenuPage} />
+      </Switch>
       <Footer />
     </Router>
   );
