@@ -17,6 +17,7 @@ export const NavLink = styled(Link)`
   align-items: center;
   text-decoration: none;
   cursor: pointer;
+  background-color: transparent;
 
   @media screen and (max-width: 300px) {
     position: absolute;
@@ -32,10 +33,12 @@ export const NavIcon = styled.div`
   right: 0;
   cursor: pointer;
   color: #fff;
+  background-color: transparent;
 
   p {
     transform: translate(-175%, 130%);
     font-weight: bold;
+    background-color: transparent;
     @media screen and (max-width: 450px) {
       display: none;
     }
@@ -45,6 +48,7 @@ export const NavIcon = styled.div`
 export const Bars = styled(FaPizzaSlice)`
   font-size: 2rem;
   transform: translate(-50%, 10%);
+  background-color: transparent;
   @media screen and (max-width: 450px) {
     transform: translate(-80%, 80%);
   }

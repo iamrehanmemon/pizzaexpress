@@ -19,9 +19,7 @@ function App() {
           exact
           path="/fullmenu"
           component={() => (
-            <div>
-              <Products heading="Our Full Menu" data={allproducts} />
-            </div>
+            <Products heading="Our Full Menu" data={allproducts} />
           )}
         />
         <Route
