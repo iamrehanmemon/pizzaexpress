@@ -1,11 +1,13 @@
 import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
-// import {} from "react-router-dom";
+
 import { GlobalStyle } from "./globalStyle";
+
 import Homepage from "./pages/Homepage/homepage";
-import FullMenu from "./pages/FullMenu/fullmenupage";
-import PizzaPage from "./pages/PizzaPage/pizzapage";
-import DesertMenuPage from "./pages/DesertMenuPage/desertpage";
+
 import Footer from "./components/Footer";
+import Products from "./components/Products";
+
+import { allproducts, pizzaData, sweetData } from "./components/Products/data";
 
 function App() {
   return (
@@ -13,9 +15,25 @@ function App() {
       <GlobalStyle />
       <Switch>
         <Route exact path="/" component={Homepage} />
-        <Route exact path="/fullmenu" component={FullMenu} />
-        <Route exact path="/pizza" component={PizzaPage} />
-        <Route exact path="/deserts" component={DesertMenuPage} />
+        <Route
+          exact
+          path="/fullmenu"
+          component={() => (
+            <div>
+              <Products heading="Our Full Menu" data={allproducts} />
+            </div>
+          )}
+        />
+        <Route
+          exact
+          path="/pizza"
+          component={() => <Products heading="Pizzas" data={pizzaData} />}
+        />
+        <Route
+          exact
+          path="/deserts"
+          component={() => <Products heading="Deserts" data={sweetData} />}
+        />
       </Switch>
       <Footer />
     </Router>

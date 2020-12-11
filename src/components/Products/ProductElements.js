@@ -17,8 +17,8 @@ export const ProductWrapper = styled.div`
 export const ProductsHeading = styled.h1`
   font-size: clamp(2rem, 2.5vw, 3rem);
   text-align: center;
-  margin-bottom: 2.5rem;
-  padding-top: 2.5rem;
+
+  padding: 2.5rem 0;
 `;
 
 export const ProductCard = styled.div`
